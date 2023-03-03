@@ -202,7 +202,7 @@ public class Accessmethod {
 
             }
         } catch (CloneNotSupportedException e) {
-            throw new RuntimeException("Clone Error");
+            LOG.info("Clone Error");
         }
     }
 
