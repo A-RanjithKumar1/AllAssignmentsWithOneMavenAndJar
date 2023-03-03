@@ -350,11 +350,11 @@ public class Accessmethod {
         map.put(2, "shyam");
         map.put(3, "jam");
         map.put(1, "spam");
-
-        LOG.log(Level.INFO, () -> "Size: " + map.size());
-        LOG.log(Level.INFO, () -> "Values : " + map.values());
-        LOG.log(Level.INFO, () -> "Keys : " + map.keySet());
         LOG.log(Level.INFO, () -> s1 + map.entrySet());
+        LOG.log(Level.INFO, () -> "Size: " + map.size());
+        LOG.log(Level.INFO, () -> "Keys : " + map.keySet());
+        LOG.log(Level.INFO, () -> "Values : " + map.values());
+
 
         LOG.log(Level.INFO, () -> "Getting a value" + map.get(2));
 
@@ -364,7 +364,6 @@ public class Accessmethod {
 
         LOG.info("After replacing ");
         map.replace(1, "Friends");
-        LOG.log(Level.INFO, () -> s1 + map.entrySet());
         LOG.log(Level.INFO, () -> "Size: " + map.size());
         LOG.log(Level.INFO, () -> "Values : " + map.values());
         LOG.log(Level.INFO, () -> "Keys : " + map.keySet());
