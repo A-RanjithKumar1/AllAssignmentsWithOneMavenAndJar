@@ -44,7 +44,6 @@ public class Accessmethod {
         final String triangle = "triangle";
         final String rectangle = "rectangle";
         final String circle = "circle";
-        final String option = "Select the Below required option\n1.Perimeter\n2.Area\n3.Both";
         final String query = "Oh! choose the correct option";
         LOG.info("Please enter the shape for which you want to find Area and Perimeter");
         String op = sc.next();
