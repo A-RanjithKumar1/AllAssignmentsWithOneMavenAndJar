@@ -14,18 +14,18 @@ public class MainOfAll {
                 log.info("Please Select the above Operation");
                 choose = sc.nextInt();
                 switch (choose) {
-                    case 1 -> access.BankAccount();
-                    case 2 -> access.BasicShape();
-                    case 3 -> access.Student();
-                    case 4 -> access.DataBase();
-                    case 5 -> access.BasicPoint();
-                    case 6 -> access.CreditCard();
+                    case 1 -> access.bankAccount();
+                    case 2 -> access.basicShape();
+                    case 3 -> access.student();
+                    case 4 -> access.dataBase();
+                    case 5 -> access.basicPoint();
+                    case 6 -> access.creditCard();
                     case 7 -> access.studentGpa();
                     case 8 -> access.treeSet();
                     case 9 -> access.hashSet();
                     case 10 -> access.hashMap();
-                    case 11 -> access.Calculator();
-                    case 12 -> access.Contacts();
+                    case 11 -> access.calculator();
+                    case 12 -> access.contacts();
                     case 13 -> access.textFile();
                     case 14 -> access.ticTacToe();
                     case 15 -> access.arrayList();

@@ -8,7 +8,7 @@ public class Accessmethod {
 
     private static final Logger LOG = Logger.getLogger("InfoLogging");
 
-    protected void BankAccount() {
+    protected void bankAccount() {
         String s;
         LOG.info("Enter the userName");
         String name = sc.next();
@@ -40,7 +40,7 @@ public class Accessmethod {
         }
     }
 
-    public void BasicShape() {
+    public void basicShape() {
         final Logger LOG = Logger.getLogger("InfoLogging");
         final String TRIANGLE = "TRIANGLE";
         final String RECTANGLE = "RECTANGLE";
@@ -94,7 +94,7 @@ public class Accessmethod {
         }
     }
 
-    void Student() {
+    void student() {
         LOG.info("Please Enter the Student Name");
         String name = sc.next();
         LOG.info("Enter the Grade level");
@@ -120,7 +120,7 @@ public class Accessmethod {
         }
     }
 
-    void DataBase() {
+    void dataBase() {
         LOG.info("Enter the Connection Name");
         String con = sc.nextLine();
         // Instantiating Singleton class with variable x
@@ -144,7 +144,7 @@ public class Accessmethod {
         }
     }
 
-    void BasicPoint() {
+    void basicPoint() {
         try {
             String dumy = "";
             LOG.log(Level.INFO, "Enter the X-coordinate");
@@ -172,7 +172,7 @@ public class Accessmethod {
         }
     }
 
-    void CreditCard() {
+    void creditCard() {
         try {
             String dumy = "";
             LOG.log(Level.INFO, "Enter the CardHolder Name");
@@ -443,7 +443,7 @@ public class Accessmethod {
         }
     }
 
-    void Calculator() {
+    void calculator() {
         LOG.info("Enter the operand value1 to perform the mathematical operation");
         int first = sc.nextInt();
         LOG.info("Enter the operand value2 to perform the mathematical operation");
@@ -466,7 +466,7 @@ public class Accessmethod {
             }
         }
     }
-    void Contacts(){
+    void contacts(){
         LinkedList l=new LinkedList();
         int ch;
         String s1="Enter the Name :";
