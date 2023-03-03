@@ -41,28 +41,27 @@ public class Accessmethod {
     }
 
     public void basicShape() {
-        final Logger LOG = Logger.getLogger("InfoLogging");
-        final String TRIANGLE = "TRIANGLE";
-        final String RECTANGLE = "RECTANGLE";
-        final String CIRCLE = "CIRCLE";
-        final String OPTIONS = "Select the Below required option\n1.Perimeter\n2.Area\n3.Both";
-        final String QUERY = "Oh! choose the correct option";
+        final String triangle = "triangle";
+        final String rectangle = "rectangle";
+        final String circle = "circle";
+        final String option = "Select the Below required option\n1.Perimeter\n2.Area\n3.Both";
+        final String query = "Oh! choose the correct option";
         LOG.info("Please enter the shape for which you want to find Area and Perimeter");
         String op = sc.next();
         String st;
-        if (((op.toUpperCase()).compareTo(RECTANGLE)) == 0) {
+        if (((op.toUpperCase()).compareTo(rectangle)) == 0) {
             LOG.info("Enter the length of the Rectangle");
             float l = sc.nextFloat();
             LOG.info("Enter the breadth of the Rectangle");
             float b = sc.nextFloat();
             ShapeAndDim figure = new ShapeAndDim(l, b);
-            double pm = figure.perimeter(RECTANGLE);
+            double pm = figure.perimeter(rectangle);
             st = "The perimeter of the Rectangle is-----" + pm;
             LOG.info(st);
-            double ar = figure.area(RECTANGLE);
+            double ar = figure.area(rectangle);
             st = "The Area of the Rectangle is-----" + ar;
             LOG.info(st);
-        } else if (((op.toUpperCase()).compareTo(TRIANGLE)) == 0) {
+        } else if (((op.toUpperCase()).compareTo(triangle)) == 0) {
             LOG.info("Enter the base of the Triangle");
             float b1 = sc.nextFloat();
             LOG.info("Enter the height of the Triangle");
@@ -72,25 +71,25 @@ public class Accessmethod {
             float s2 = sc.nextFloat();
             float s3 = sc.nextFloat();
             ShapeAndDim figure = new ShapeAndDim(b1, h1, s1, s2, s3);
-            double pm1 = figure.perimeter(TRIANGLE);
+            double pm1 = figure.perimeter(triangle);
             st = "The perimeter of the Triangle is-----" + pm1;
             LOG.info(st);
-            double ar1 = figure.area(TRIANGLE);
+            double ar1 = figure.area(triangle);
             st = "The Area of the Rectangle is-----" + ar1;
             LOG.info(st);
-        } else if (((op.toUpperCase()).compareTo(CIRCLE)) == 0) {
+        } else if (((op.toUpperCase()).compareTo(circle)) == 0) {
             LOG.info("Enter the radius of the Circle");
             float r = sc.nextFloat();
             ShapeAndDim figure = new ShapeAndDim(r);
-            double pm2 = figure.perimeter(CIRCLE);
+            double pm2 = figure.perimeter(circle);
             st = "The perimeter of the circle is-----" + pm2;
             LOG.info(st);
             ShapeAndDim figure3 = new ShapeAndDim(r);
-            double ar2 = figure3.area(CIRCLE);
+            double ar2 = figure3.area(circle);
             st = "The Area of the circle is-----" + ar2;
             LOG.info(st);
         } else {
-            LOG.info(QUERY);
+            LOG.info(query);
         }
     }
 
@@ -204,7 +203,7 @@ public class Accessmethod {
 
             }
         } catch (CloneNotSupportedException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Clone Error");
         }
     }
 
@@ -273,7 +272,7 @@ public class Accessmethod {
         String s;
         String s2 = "Enter your choice\n1.Add\n2.Print\n3.Size\n4.Remove";
 
-        Scanner sc = new Scanner(System.in);
+
         HashSet<String> hs = new HashSet<>();
 
         while (true) {

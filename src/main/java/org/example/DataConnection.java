@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Scanner;
 import java.util.logging.*;
 public class DataConnection {
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
